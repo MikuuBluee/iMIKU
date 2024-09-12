@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tasks-overview {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .tasks-overview h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .task-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .task-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .task-icon.project-briefing { background-color: #DFF4E5; }
+        .task-icon.concept-design { background-color: #FFEFDB; }
+        .task-icon.functional-logics { background-color: #E4F0F9; }
+        .task-icon.development { background-color: #FEEDEF; }
+        .task-icon.testing { background-color: #F1EEFD; }
+
+        .task-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .task-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .task-role {
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="tasks-overview">
+        <h2>Tasks Overview</h2>
+
+        <div class="task-item">
+            <div class="task-icon project-briefing">📋</div>
+            <div class="task-text">
+                <div class="task-title">Project Briefing</div>
+                <div class="task-role">Project Manager</div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-icon concept-design">✏️</div>
+            <div class="task-text">
+                <div class="task-title">Concept Design</div>
+                <div class="task-role">Art Director</div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-icon functional-logics">💻</div>
+            <div class="task-text">
+                <div class="task-title">Functional Logics</div>
+                <div class="task-role">Lead Developer</div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-icon development">🔧</div>
+            <div class="task-text">
+                <div class="task-title">Development</div>
+                <div class="task-role">DevOps</div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-icon testing">🧪</div>
+            <div class="task-text">
+                <div class="task-title">Testing</div>
+                <div class="task-role">QA Managers</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

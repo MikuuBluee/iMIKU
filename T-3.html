@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 386px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            height: 257px; 
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .author-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .author-name {
+            font-weight: bold;
+        }
+
+        .like-comment {
+            display: flex;
+            margin-top: -40px;
+            justify-content: flex-end;
+            font-size: 0.9rem;
+        }
+
+        .like-comment span {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .fa-heart, .fa-comment {
+            margin-right: 5px;
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="mentahan-2.jpeg" alt="Social Media Icons">
+        </div>
+        <div class="content">
+            <h2 class="title">Urban Dreams</h2>
+            <div class="author">
+                <img src="pp.jfif" alt="Cody Fisher" class="author-image">
+                <span class="author-name">Cody Fisher</span>
+            </div>
+            <div class="like-comment">
+                <span class="likes"><i class="fa fa-heart"></i>24</span>
+                <span class="comments"><i class="fa fa-comment"></i>5</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
