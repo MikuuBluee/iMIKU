@@ -3,101 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas 2</title>
     <style>
-       * {
-        margin: 0;
-        padding: 0;
-       }
-       body {
-        font-family: Arial, sans-serif;
-        width: 1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-       .box {
-        width: 800px;
-        height: 500px;
-        border-radius: 10px;
-        box-shadow: 1px 3px 3px 2px #222222;
-        display: flex;
-        gap: 10px;
-        background-color: white;
-       }
-       .box img {
-        margin-top: 20px;
-        margin-left: 20px;
-        border-radius: 10px;
-       }
-       .isi {
-        width: 450px;
-       }
-       .head {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        margin-right: 20px;
-        margin-top: 20px;
-       }
-       .head .judul h2 {
-        margin: 0;
-       }
-       .proses {
-        background-color: #e0f7fa;
-        color: #6a59fc;
-        display: inline-block;
-        padding: 5px 10px;
-        margin-bottom: 10px;
-       }
-       span {
-        color: #474545;
-       }
-       .profil img {
-        border-radius: 50px;
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-       }
-       .profil {
-        display: flex;
-        align-items: center;
-       }
-       .budget {
-        display: flex;
-        align-items: center;
-       }
-       .nama {
-        display: flex;
-        flex-direction: column;
-       }
-       .desk {
-        margin-top: 30px;
-        font-size: 25px;
-        color: #474545;
-        display: inline-block;
-        padding: 5px 10px;
-        margin-bottom: 10px;
-       }
-       .footer {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-       }
-       .tggl {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-       }
-       
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 800px;
+            height: 340px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 2px 1px #524d4d;
+            display: flex;
+            gap: 10px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        .box img{
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        .isi {
+            width: 450px;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .head .judul h2{
+            margin-bottom: 5px;
+        
+        }
+        .status p{
+            background-color: #e0f7fa;
+            color: #6a59fc;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom:10px ;
+        }
+        span{
+            color: #474545;
+            font-size: 15px;
+        }
+        .profil img{
+          border-radius: 50px;
+          width: 40px;
+          height: 40px;
+          margin: 0;
+        }
+        .profil{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .budget{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nama{
+            display: flex;
+            flex-direction: column;
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .description{
+            margin-top:20px ;
+        }
+        .now{
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .date{
+            font-weight: bolder;
+            border:1px dashed gray;
+            padding: 5px;
+        }
+        .date span{
+            font-weight: normal;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .info{
+            font-weight: bolder;
+            border:1px dashed gray;
+            padding: 5px;
+        }
+        .info span{
+            font-weight: normal;
+            padding-right:160px;
+        }
+        .team{
+            display: flex;
+            align-items: center;
+            margin-top:40px ;
+        }
+        .team img{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: -10px;
+            border: 2px solid white;
+            margin: 0;
+            
+        }
+        .team .initials{
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: -10px;
+        }
+        .view{
+            color: #007bff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding-left: 258px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="box">
         <div class="img">
-            <img src="mentahan-1.jpeg" alt="" width="300px" height="450px">
+            <img src="mentahan-1.jpeg" alt="" width="300px" height="300px">
         </div>
         <div class="isi">
             <div class="head">
@@ -106,35 +161,61 @@
                     <h2>9 Degree</h2>
                 </div>
                 <div class="status">
-                    <p class="proses">In Process</p>
+                    <p>In Process</p>
                 </div>
             </div>
             <div class="profil">
-                <img src="pp.jfif" alt="">
-                <div class="nama">
-                    <span>Manager</span>
-                    <span>Robert Fox</span>
+                <div class="image">
+                    <img src="pp.jfif" alt="">
+                    <div class="nama">
+                        <span>Manager</span>
+                        <p>Robert Fox</p>
+                    </div>
                 </div>
-                <div class="budget">
-                    <img src="budget.jpeg" alt="" width=" 00px" height="300px">
-                    <span>Budget</span>
-                    <span>$64.800</span>
-                </div>
-            </div>
-            <div class="isi">
-                <p class="desk">Flat cartoony illustrations with vivid unblended colors and 
-                    asymmetrical beautiful purple hair lady</p>
-            </div>
-            <div class="footer">
-                <div class="tb">
-                    <p class="kepala">Feb 6, 2021</p>
-                    <p>Due Date</p>
-                </div>
-                <div class="tb">
-                    <p class="kepala">$284,900</p>
-                    <p>Budget</p>
+                <div class="image">
+                    <div class="budget">
+                        <img src="budget.jpeg" alt="">
+                        <div class="money">
+                            <span>Budget</span>
+                            <p>$64.800</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="description">
+                <span>
+                    Flat cartoony ilustrations with vivid unblended
+                    colors and asymmetrical beautiful puple hair lady
+                </span>
+            </div>
+            <div class="now">
+            <div class="date">
+                <p>
+                    Feb 6, 2021
+                </p>
+                <span>
+                    Due date
+                </span>
+            </div>
+            <div class="info">
+                <p>
+                    $284,900
+                </p>
+                <span>
+                    Budget
+                </span>
+            </div>
+        </div>
+        <div class="team">
+            <img src="pp2.jfif" alt="1" height="30" width="30">
+            <img src="pp3.jfif" alt="2" height="30" width="30">
+            <div class="initials">
+                s
+            </div>
+            <a class="view" href="#">View Project
+                <i class="fas fa-pen"></i>
+            </a>
+        </div>
         </div>
     </div>
 </body>
